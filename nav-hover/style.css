@@ -1,56 +1,52 @@
 :root{
-  --font_main: verdana;
-  --color_main: floralWhite;
+	--font_main: verdana;
+ 	--color_main: floralWhite;
 	--color_dimmed:rgba(255, 250, 240, .5);	
 	--color_destaque:white;
 	--link: lightskyblue;
-  --patronus_core:white;
+	--patronus_core:white;
 	--patronus_out: dodgerblue; /*dodgerblue ficou bom*/
 	--patronus_in:silver;
 }
 #nav{
-  background-color: black;
-  height: 50px;
-  width: auto;
-  display:flex; align-items:center;
-  justify-content:center;
+	background-color: black;
+	height: 50px;
+	width: auto;
+	display:flex; align-items:center;
+	justify-content:center;
 }
+
 #nav>ul{
-  background-color:transparent;
-  height: 50%;
-  width: 95%;
-  padding:0;
-  list-style-type: none; /*remove os pontos da lista*/
-  
-  display:flex;
-  justify-content: space-between;
-  
+	background-color:transparent;
+	height: 50%;
+	width: 95%;
+	padding:0;
+	list-style-type: none; /*remove os pontos da lista*/
+	display:flex;
+	justify-content: space-between;
+
 }
 
 #nav>ul>li{
-  height:100%;
-  background-color:transparent;
-  position:relative;
-  display:flex;
-    align-items:center;
+	height:100%;
+	background-color:transparent;
+	position:relative;
+	display:flex;
+	align-items:center;
 }
 
 #nav>ul>li>a{
-  height:100%;
-  background-color: transparent;
+	height:100%;
+	background-color: transparent;
 	position:relative;
 	font-size: 20px;
-	font-size-adjust: 0.50;
-	font-weight:100;
-	font-family:monospace;
+	font-family:arial;
+	/* font-weight: 100; */
 	color:var(--color_main);
-	text-transform: lowercase;
-	font-variant:small-caps;
-	
 	padding: 0px 10px!important;
-  display:flex;
-  align-items: center;
-	z-index:1;
+	display:flex;
+	align-items: center;
+	/* z-index:1; */
 	transition: all 1s, outline 0s;
 }
 
@@ -88,8 +84,8 @@
   	position: absolute;
   	top:50%;
   	bottom:50%;
-  	left: -5px;
-  	right:-5px;
+  	left: -2px;
+  	right:-2px;
   	height: auto;
   	width: auto;
   	border-left: 1px solid var(--patronus_core);
@@ -100,8 +96,8 @@
 	content:"";
 	position: absolute;
 	display:block;
-	top: -5px;
-	bottom: -5px;
+	top: -2px;
+	bottom: -2px;
 	left:50%;
 	right:50%;
 	height:auto;
@@ -113,15 +109,15 @@
 /*HOVERS-------------------------------*/
 
 #nav:hover > ul>li:after{
-	top: -5px;
-	bottom: -5px;
+	top: -2px;
+	bottom: -2px;
 	
 	box-shadow: inset 0px 0px 7px 0px var(--patronus_in), 0px 0px 7px 0px var(--patronus_out);
 	transition: all 1s;
 }
 #nav:hover > ul>li:before{
-	left:-5px;
-	right:-5px;
+	left:-2px;
+	right:-2px;
 	
 	box-shadow: inset 0px 0px 7px 0px var(--patronus_in), 0px 0px 7px 0px var(--patronus_out);
 	transition: all 1s;
